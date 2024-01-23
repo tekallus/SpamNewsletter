@@ -51,6 +51,9 @@ export default function App() {
 
     // Yinelenen durumu state'e ayarla
     setDuplicate(isDuplicate)
+	  if (!isDuplicate) {
+      emailList.push(userInput.toLowerCase())
+    }
   }
 
   return (
