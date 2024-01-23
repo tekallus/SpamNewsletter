@@ -51,6 +51,10 @@ export default function App() {
 
     // Yinelenen durumu state'e ayarla
     setDuplicate(isDuplicate)
+    // Yeni e-posta adresini emailList dizisine eklendi
+    if (!isDuplicate) {
+      emailList.push(userInput.toLowerCase())
+    }
   }
 
   return (
